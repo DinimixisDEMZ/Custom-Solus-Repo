@@ -1,0 +1,21 @@
+name       : wlsunset
+version    : 0.4.0
+release    : 1
+source     :
+    - https://github.com/kennylevinsen/wlsunset/archive/refs/tags/0.4.0.zip : f47705e3fd5027f7e7eeeb853c4b3abffc90da52e4a9796beae223b1f318bb54
+license    : MIT
+component  : desktop.wayland
+summary    : Day/night gamma adjustments for Wayland compositors
+description: |
+    Day/night gamma adjustments for Wayland compositors supporting wlr-gamma-control-unstable-v1.
+builddeps  :
+    - pkgconfig(wayland-client)
+    - pkgconfig(wayland-scanner)
+    - pkgconfig(wayland-protocols)
+    - scdoc
+setup      : |
+    %meson_configure
+build      : |
+    %ninja_build
+install    : |
+    %ninja_install

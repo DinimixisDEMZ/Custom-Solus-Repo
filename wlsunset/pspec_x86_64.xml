@@ -1,0 +1,35 @@
+<PISI>
+    <Source>
+        <Name>wlsunset</Name>
+        <Packager>
+            <Name>DinimixisDEMZ</Name>
+            <Email>dinimixis@vivaldi.net</Email>
+        </Packager>
+        <License>MIT</License>
+        <PartOf>desktop.wayland</PartOf>
+        <Summary xml:lang="en">Day/night gamma adjustments for Wayland compositors</Summary>
+        <Description xml:lang="en">Day/night gamma adjustments for Wayland compositors supporting wlr-gamma-control-unstable-v1.
+</Description>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://sources.getsol.us/README.Solus</Archive>
+    </Source>
+    <Package>
+        <Name>wlsunset</Name>
+        <Summary xml:lang="en">Day/night gamma adjustments for Wayland compositors</Summary>
+        <Description xml:lang="en">Day/night gamma adjustments for Wayland compositors supporting wlr-gamma-control-unstable-v1.
+</Description>
+        <PartOf>desktop.wayland</PartOf>
+        <Files>
+            <Path fileType="executable">/usr/bin/wlsunset</Path>
+            <Path fileType="man">/usr/share/man/man1/wlsunset.1.zst</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2026-01-30</Date>
+            <Version>0.4.0</Version>
+            <Comment>Packaging update</Comment>
+            <Name>DinimixisDEMZ</Name>
+            <Email>dinimixis@vivaldi.net</Email>
+        </Update>
+    </History>
+</PISI>

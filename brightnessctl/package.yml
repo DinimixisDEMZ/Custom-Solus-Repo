@@ -1,0 +1,26 @@
+name       : brightnessctl
+version    : 0.5.1
+release    : 1
+source     :
+    - https://github.com/Hummer12007/brightnessctl/archive/refs/tags/0.5.1.tar.gz : a68869e23f56ac4f2e28f1783002810ddbf10f95e1af9b48b2912fb169f46994
+homepage   : https://github.com/Hummer12007/brightnessctl
+license    : MIT
+component  : system.utils
+summary    : A program to read and control device brightness
+description: |
+    brightnessctl is a lightweight command-line utility to control device brightness
+    on Linux. It can control backlights (screen brightness) and LEDs without requiring
+    sudo/root privileges when properly configured with udev rules or systemd-logind API.
+    
+    Features:
+    - Control screen brightness from the command line
+    - Support for keyboard backlights and LEDs
+    - Can be used without root privileges with proper udev rules
+    - Supports both absolute and relative brightness changes
+    - Works with systemd-logind for permission management
+builddeps  :
+    - pkgconfig(systemd)
+build      : |
+    %make ENABLE_SYSTEMD=1
+install    : |
+    %make_install ENABLE_SYSTEMD=1

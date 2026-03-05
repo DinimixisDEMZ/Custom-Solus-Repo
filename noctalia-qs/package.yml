@@ -1,0 +1,40 @@
+name       : noctalia-qs
+version    : 0.0.5
+release    : 1
+source     :
+    - https://github.com/noctalia-dev/noctalia-qs/archive/refs/tags/v0.0.5.tar.gz : b0552dcffa6ddfbf81fa890508fca50b2cfa46a2c95f7a6945b94cdb45052026
+homepage   : https://github.com/noctalia-dev/noctalia-qs
+license    : LGPL-3.0-only
+component  : desktop.wayland
+summary    : Flexible toolkit for making desktop shells with QtQuick (Noctalia fork)
+description: |
+    noctalia-qs is a custom fork of Quickshell, a flexible toolkit for making desktop
+    shells with QtQuick, for Wayland and X11. It serves as the supported runtime
+    for the Noctalia shell ecosystem, providing features and patches specific to
+    Noctalia, such as ext-background-effect-v1 support.
+builddeps  :
+    - pkgconfig(gbm)
+    - pkgconfig(jemalloc)
+    - pkgconfig(libdrm)
+    - pkgconfig(libpipewire-0.3)
+    - pkgconfig(wayland-protocols)
+    - pkgconfig(xcb)
+    - pkgconfig(xkbcommon)
+    - cli11
+    - qt6-base-devel
+    - qt6-base-private-devel
+    - qt6-declarative-devel
+    - qt6-shadertools-devel
+    - qt6-wayland-devel
+    - vulkan-headers
+setup      : |
+    %cmake_ninja -DCMAKE_BUILD_TYPE=Release \
+                 -DUSE_JEMALLOC=ON \
+                 -DDISTRIBUTOR="Solus" \
+                 -DGIT_REVISION="v0.0.5" \
+                 -DCRASH_REPORTER=OFF
+build      : |
+    %ninja_build
+install    : |
+    %ninja_install
+    ln -sfv quickshell $installdir/usr/bin/qs

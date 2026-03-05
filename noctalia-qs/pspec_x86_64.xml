@@ -1,0 +1,44 @@
+<PISI>
+    <Source>
+        <Name>noctalia-qs</Name>
+        <Homepage>https://github.com/noctalia-dev/noctalia-qs</Homepage>
+        <Packager>
+            <Name>DinimixisDEMZ</Name>
+            <Email>dinimixis@vivaldi.net</Email>
+        </Packager>
+        <License>LGPL-3.0-only</License>
+        <PartOf>desktop.wayland</PartOf>
+        <Summary xml:lang="en">Flexible toolkit for making desktop shells with QtQuick (Noctalia fork)</Summary>
+        <Description xml:lang="en">noctalia-qs is a custom fork of Quickshell, a flexible toolkit for making desktop
+shells with QtQuick, for Wayland and X11. It serves as the supported runtime
+for the Noctalia shell ecosystem, providing features and patches specific to
+Noctalia, such as ext-background-effect-v1 support.
+</Description>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://sources.getsol.us/README.Solus</Archive>
+    </Source>
+    <Package>
+        <Name>noctalia-qs</Name>
+        <Summary xml:lang="en">Flexible toolkit for making desktop shells with QtQuick (Noctalia fork)</Summary>
+        <Description xml:lang="en">noctalia-qs is a custom fork of Quickshell, a flexible toolkit for making desktop
+shells with QtQuick, for Wayland and X11. It serves as the supported runtime
+for the Noctalia shell ecosystem, providing features and patches specific to
+Noctalia, such as ext-background-effect-v1 support.
+</Description>
+        <PartOf>desktop.wayland</PartOf>
+        <Files>
+            <Path fileType="executable">/usr/bin/qs</Path>
+            <Path fileType="executable">/usr/bin/quickshell</Path>
+            <Path fileType="data">/usr/share/applications/dev.noctalia.noctalia-qs.desktop</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/scalable/apps/dev.noctalia.noctalia-qs.svg</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2026-03-05</Date>
+            <Version>0.0.5</Version>
+            <Comment>Packaging update</Comment>
+            <Name>DinimixisDEMZ</Name>
+            <Email>dinimixis@vivaldi.net</Email>
+        </Update>
+    </History>
+</PISI>
