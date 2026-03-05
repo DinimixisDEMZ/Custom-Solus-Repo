@@ -42,17 +42,17 @@ jobs:
           # Crear directorios de configuración de solbuild
           sudo mkdir -p /etc/solbuild
           
-          # Crear el perfil main-x86_64 manualmente para evitar errores de red
-          # Esto le dice a solbuild de dónde bajar la imagen base
+          # Crear el perfil main-x86_64 manualmente
+          # La URL correcta suele ser .img.xz en lugar de .tar.xz
           cat <<EOF | sudo tee /etc/solbuild/main-x86_64.profile
           [Profile]
           Name=main-x86_64
-          Image=https://sources.getsol.us/solbuild/main-x86_64.tar.xz
+          Image=https://getsol.us/solbuild/main-x86_64.img.xz
           EOF
           
-          # Inicializar y actualizar la imagen base (esto tarda unos minutos)
-          sudo solbuild init -p main-x86_64 -auto
-          sudo solbuild update -p main-x86_64
+          # Inicializar la imagen base
+          # -u indica que la descargue si no existe o la actualice
+          sudo solbuild init -p main-x86_64 -u
 
       - name: Build Package
         working-directory: ${{ matrix.package }}
