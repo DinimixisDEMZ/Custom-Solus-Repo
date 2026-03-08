@@ -1,4 +1,4 @@
-# 📦 Custom Solus Repository
+# 📦 Custom Solus Repository For Noctalia Support
 ### Experimental & Personal Package Collection
 
 [![Solus](https://img.shields.io/badge/OS-Solus-blue?style=flat-square&logo=solus&logoColor=white)](https://getsol.us/)
