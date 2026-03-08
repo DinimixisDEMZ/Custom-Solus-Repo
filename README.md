@@ -26,5 +26,5 @@ sudo eopkg it ./package-name.eopkg
 ## Building | Generate EOPKG Manually
 - **Clone** a repo: `git clone https://github.com/DinimixisDEMZ/Noctalia-For-Solus`
 - **Go to** "package folder", ex: `cd noctalia-qs`
-- **Build** with **solbuild**: `sudo solbuild package.yml`
+- **Build** with **solbuild**: `sudo solbuild build package.yml`
 - After **install** a generate **.eopkg**, ex: `sudo eopkg it ./noctalia-qs-0.0.5-1-1-x86_64.eopkg`
