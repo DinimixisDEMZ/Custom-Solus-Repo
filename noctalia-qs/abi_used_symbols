@@ -1,3 +1,4 @@
+ld-linux-x86-64.so.2:__tls_get_addr
 libEGL.so.1:eglCreateImage
 libEGL.so.1:eglDestroyImage
 libEGL.so.1:eglGetError
@@ -34,14 +35,16 @@ libQt6Core.so.6:_ZN10QArrayData8allocateEPPS_xxxNS_16AllocationOptionE
 libQt6Core.so.6:_ZN10QArrayData9allocate1EPPS_xNS_16AllocationOptionE
 libQt6Core.so.6:_ZN10QArrayData9allocate2EPPS_xNS_16AllocationOptionE
 libQt6Core.so.6:_ZN10QByteArray11reallocDataExN10QArrayData16AllocationOptionE
+libQt6Core.so.6:_ZN10QByteArray14trimmed_helperERKS_
+libQt6Core.so.6:_ZN10QByteArray4chopEx
 libQt6Core.so.6:_ZN10QByteArray5clearEv
 libQt6Core.so.6:_ZN10QByteArray6_emptyE
 libQt6Core.so.6:_ZN10QByteArray6appendERKS_
 libQt6Core.so.6:_ZN10QByteArray6appendEc
 libQt6Core.so.6:_ZN10QByteArray6insertEx14QByteArrayView
 libQt6Core.so.6:_ZN10QByteArray6numberEyi
+libQt6Core.so.6:_ZN10QByteArray6removeExx
 libQt6Core.so.6:_ZN10QByteArray6resizeEx
-libQt6Core.so.6:_ZN10QByteArray8truncateEx
 libQt6Core.so.6:_ZN10QByteArrayC1EPKcx
 libQt6Core.so.6:_ZN10QByteArrayC1ExN2Qt14InitializationE
 libQt6Core.so.6:_ZN10QByteArrayaSERKS_
@@ -62,9 +65,7 @@ libQt6Core.so.6:_ZN10QJsonValueD1Ev
 libQt6Core.so.6:_ZN11QBasicMutex12lockInternalEv
 libQt6Core.so.6:_ZN11QBasicMutex15destroyInternalEPv
 libQt6Core.so.6:_ZN11QBasicMutex19unlockInternalFutexEPv
-libQt6Core.so.6:_ZN11QDataStream11readRawDataEPcx
 libQt6Core.so.6:_ZN11QDataStream11resetStatusEv
-libQt6Core.so.6:_ZN11QDataStream12setByteOrderENS_9ByteOrderE
 libQt6Core.so.6:_ZN11QDataStream16startTransactionEv
 libQt6Core.so.6:_ZN11QDataStream17commitTransactionEv
 libQt6Core.so.6:_ZN11QDataStream9setDeviceEP9QIODevice
@@ -90,6 +91,7 @@ libQt6Core.so.6:_ZN11QJsonObjectC1ERKS_
 libQt6Core.so.6:_ZN11QJsonObjectC1ESt16initializer_listISt4pairI7QString10QJsonValueEE
 libQt6Core.so.6:_ZN11QJsonObjectC1Ev
 libQt6Core.so.6:_ZN11QJsonObjectD1Ev
+libQt6Core.so.6:_ZN11QJsonObjectaSERKS_
 libQt6Core.so.6:_ZN11QJsonObjectixERK7QString
 libQt6Core.so.6:_ZN11QMetaObject10ConnectionD1Ev
 libQt6Core.so.6:_ZN11QMetaObject14normalizedTypeEPKc
@@ -332,6 +334,7 @@ libQt6Core.so.6:_ZN8QProcess10setProgramERK7QString
 libQt6Core.so.6:_ZN8QProcess12setArgumentsERK5QListI7QStringE
 libQt6Core.so.6:_ZN8QProcess13errorOccurredENS_12ProcessErrorE
 libQt6Core.so.6:_ZN8QProcess13startDetachedEPx
+libQt6Core.so.6:_ZN8QProcess13startDetachedERK7QStringRK5QListIS0_ES2_Px
 libQt6Core.so.6:_ZN8QProcess16closeReadChannelENS_14ProcessChannelE
 libQt6Core.so.6:_ZN8QProcess16staticMetaObjectE
 libQt6Core.so.6:_ZN8QProcess17closeWriteChannelEv
@@ -359,6 +362,8 @@ libQt6Core.so.6:_ZN8QVariantC1E5QRect
 libQt6Core.so.6:_ZN8QVariantC1E9QMetaTypePKv
 libQt6Core.so.6:_ZN8QVariantC1ERK7QString
 libQt6Core.so.6:_ZN8QVariantC1ERKS_
+libQt6Core.so.6:_ZN8QVariantC1Eb
+libQt6Core.so.6:_ZN8QVariantC1Ed
 libQt6Core.so.6:_ZN8QVariantC1Ei
 libQt6Core.so.6:_ZN8QVariantC1Ej
 libQt6Core.so.6:_ZN8QVariantD1Ev
@@ -386,10 +391,10 @@ libQt6Core.so.6:_ZN9QIODevice19waitForBytesWrittenEi
 libQt6Core.so.6:_ZN9QIODevice4openE6QFlagsIN13QIODeviceBase12OpenModeFlagEE
 libQt6Core.so.6:_ZN9QIODevice4peekEPcx
 libQt6Core.so.6:_ZN9QIODevice4readEPcx
-libQt6Core.so.6:_ZN9QIODevice4readEx
 libQt6Core.so.6:_ZN9QIODevice4seekEx
 libQt6Core.so.6:_ZN9QIODevice4skipEx
 libQt6Core.so.6:_ZN9QIODevice5resetEv
+libQt6Core.so.6:_ZN9QIODevice5writeEPKc
 libQt6Core.so.6:_ZN9QIODevice5writeEPKcx
 libQt6Core.so.6:_ZN9QIODevice5writeERK10QByteArray
 libQt6Core.so.6:_ZN9QIODevice7readAllEv
@@ -429,6 +434,7 @@ libQt6Core.so.6:_ZN9QtPrivate20QPropertyBindingData10setBindingERK23QUntypedProp
 libQt6Core.so.6:_ZN9QtPrivate20QPropertyBindingData20removeBinding_helperEv
 libQt6Core.so.6:_ZN9QtPrivate20QStringList_containsEPK5QListI7QStringE11QStringViewN2Qt15CaseSensitivityE
 libQt6Core.so.6:_ZN9QtPrivate25QMetaTypeInterfaceWrapperI10QByteArrayE8metaTypeE
+libQt6Core.so.6:_ZN9QtPrivate25QMetaTypeInterfaceWrapperI11QJsonObjectE8metaTypeE
 libQt6Core.so.6:_ZN9QtPrivate25QMetaTypeInterfaceWrapperI12QEasingCurveE8metaTypeE
 libQt6Core.so.6:_ZN9QtPrivate25QMetaTypeInterfaceWrapperI4QMapI7QString8QVariantEE8metaTypeE
 libQt6Core.so.6:_ZN9QtPrivate25QMetaTypeInterfaceWrapperI4QUrlE8metaTypeE
@@ -472,15 +478,17 @@ libQt6Core.so.6:_ZNK10QJsonValue6toBoolEb
 libQt6Core.so.6:_ZNK10QJsonValue7toArrayEv
 libQt6Core.so.6:_ZNK10QJsonValue8toDoubleEd
 libQt6Core.so.6:_ZNK10QJsonValue8toObjectEv
+libQt6Core.so.6:_ZNK10QJsonValue8toStringERK7QString
 libQt6Core.so.6:_ZNK10QJsonValue8toStringEv
 libQt6Core.so.6:_ZNK10QJsonValue9toVariantEv
 libQt6Core.so.6:_ZNK10QJsonValueixERK7QString
 libQt6Core.so.6:_ZNK11QDataStream26isDeviceTransactionStartedEv
-libQt6Core.so.6:_ZNK11QDataStream5atEndEv
 libQt6Core.so.6:_ZNK11QFileDevice6handleEv
 libQt6Core.so.6:_ZNK11QJsonObject12toVariantMapEv
 libQt6Core.so.6:_ZNK11QJsonObject4keysEv
+libQt6Core.so.6:_ZNK11QJsonObject4sizeEv
 libQt6Core.so.6:_ZNK11QJsonObject5valueERK7QString
+libQt6Core.so.6:_ZNK11QJsonObject7isEmptyEv
 libQt6Core.so.6:_ZNK11QJsonObject8containsERK7QString
 libQt6Core.so.6:_ZNK11QMetaMethod10methodTypeEv
 libQt6Core.so.6:_ZNK11QMetaMethod11methodIndexEv
@@ -515,6 +523,7 @@ libQt6Core.so.6:_ZNK13QJsonDocument6objectEv
 libQt6Core.so.6:_ZNK13QJsonDocument6toJsonENS_10JsonFormatE
 libQt6Core.so.6:_ZNK13QJsonDocument8isObjectEv
 libQt6Core.so.6:_ZNK13QJsonDocumentixERK7QString
+libQt6Core.so.6:_ZNK13QJsonValueRef7toArrayEv
 libQt6Core.so.6:_ZNK13QJsonValueRef8toObjectEv
 libQt6Core.so.6:_ZNK13QMetaProperty10isReadableEv
 libQt6Core.so.6:_ZNK13QMetaProperty10isWritableEv
@@ -558,6 +567,7 @@ libQt6Core.so.6:_ZNK18QAbstractListModel5indexEiiRK11QModelIndex
 libQt6Core.so.6:_ZNK18QAbstractListModel6parentERK11QModelIndex
 libQt6Core.so.6:_ZNK18QAbstractListModel7siblingEiiRK11QModelIndex
 libQt6Core.so.6:_ZNK18QFileSystemWatcher5filesEv
+libQt6Core.so.6:_ZNK18QJsonValueConstRef8toObjectEv
 libQt6Core.so.6:_ZNK19QProcessEnvironment5valueERK7QStringS2_
 libQt6Core.so.6:_ZNK19QProcessEnvironment8containsERK7QString
 libQt6Core.so.6:_ZNK4QDir12absolutePathEv
@@ -581,6 +591,7 @@ libQt6Core.so.6:_ZNK5QTime4hourEv
 libQt6Core.so.6:_ZNK5QTime6minuteEv
 libQt6Core.so.6:_ZNK5QTime6secondEv
 libQt6Core.so.6:_ZNK6QSizeF6scaledERKS_N2Qt15AspectRatioModeE
+libQt6Core.so.6:_ZNK6QTimer8isActiveEv
 libQt6Core.so.6:_ZNK7QObject10metaObjectEv
 libQt6Core.so.6:_ZNK7QObject6senderEv
 libQt6Core.so.6:_ZNK7QObject8propertyEPKc
@@ -643,6 +654,7 @@ libQt6Core.so.6:_ZNK9QMetaType6createEPKv
 libQt6Core.so.6:_ZNK9QMetaType8destructEPv
 libQt6Core.so.6:_ZNK9QMetaType9constructEPvPKv
 libQt6Core.so.6:_ZNK9QtPrivate20QPropertyBindingData15notifyObserversEP20QUntypedPropertyDataP15QBindingStorage
+libQt6Core.so.6:_ZNKR10QByteArray3midExx
 libQt6Core.so.6:_ZTI16QCoreApplication
 libQt6Core.so.6:_ZTI18QAbstractListModel
 libQt6Core.so.6:_ZTI7QObject
@@ -824,6 +836,7 @@ libQt6Gui.so.6:_ZN15QGuiApplication16staticMetaObjectE
 libQt6Gui.so.6:_ZN15QGuiApplication18focusWindowChangedEP7QWindow
 libQt6Gui.so.6:_ZN15QGuiApplication18setDesktopFileNameERK7QString
 libQt6Gui.so.6:_ZN15QGuiApplication20primaryScreenChangedEP7QScreen
+libQt6Gui.so.6:_ZN15QGuiApplication23platformNativeInterfaceEv
 libQt6Gui.so.6:_ZN15QGuiApplication23setDesktopSettingsAwareEb
 libQt6Gui.so.6:_ZN15QGuiApplication25setQuitOnLastWindowClosedEb
 libQt6Gui.so.6:_ZN15QGuiApplication4execEv
@@ -1061,6 +1074,7 @@ libQt6Network.so.6:_ZN21QNetworkAccessManager13createRequestENS_9OperationERK15Q
 libQt6Network.so.6:_ZN21QNetworkAccessManager16staticMetaObjectE
 libQt6Network.so.6:_ZN21QNetworkAccessManagerC2EP7QObject
 libQt6Network.so.6:_ZN21QNetworkAccessManagerD2Ev
+libQt6Network.so.6:_ZNK12QLocalSocket11canReadLineEv
 libQt6Network.so.6:_ZNK12QLocalSocket5stateEv
 libQt6Network.so.6:_ZNK12QLocalSocket7isValidEv
 libQt6Network.so.6:_ZNK13QNetworkReply12isSequentialEv
@@ -1141,6 +1155,7 @@ libQt6Qml.so.6:_ZN9QJSEngine14collectGarbageEv
 libQt6Qml.so.6:_ZN9QJSEngine14convertManagedERK15QJSManagedValue9QMetaTypePv
 libQt6Qml.so.6:_ZN9QJSEngine14convertVariantERK8QVariant9QMetaTypePv
 libQt6Qml.so.6:_ZN9QJSEngine14setInterruptedEb
+libQt6Qml.so.6:_ZN9QJSEngine16convertPrimitiveERK17QJSPrimitiveValue9QMetaTypePv
 libQt6Qml.so.6:_ZN9QJSEngine18setObjectOwnershipEP7QObjectNS_15ObjectOwnershipE
 libQt6Qml.so.6:_ZN9QJSEngine6createE9QMetaTypePKv
 libQt6Qml.so.6:_ZN9QJSEngine8evaluateERK7QStringS2_iP5QListIS0_E
@@ -1168,15 +1183,19 @@ libQt6Qml.so.6:_ZNK11QQmlPrivate18AOTCompiledContext18initGetValueLookupEjPK11QM
 libQt6Qml.so.6:_ZNK11QQmlPrivate18AOTCompiledContext19initGetObjectLookupEjP7QObject
 libQt6Qml.so.6:_ZNK11QQmlPrivate18AOTCompiledContext19initSetObjectLookupEjP7QObject
 libQt6Qml.so.6:_ZNK11QQmlPrivate18AOTCompiledContext19loadContextIdLookupEjPv
+libQt6Qml.so.6:_ZNK11QQmlPrivate18AOTCompiledContext19loadSingletonLookupEjPv
 libQt6Qml.so.6:_ZNK11QQmlPrivate18AOTCompiledContext20lookupResultMetaTypeEj
 libQt6Qml.so.6:_ZNK11QQmlPrivate18AOTCompiledContext21setInstructionPointerEi
 libQt6Qml.so.6:_ZNK11QQmlPrivate18AOTCompiledContext23initLoadContextIdLookupEj
+libQt6Qml.so.6:_ZNK11QQmlPrivate18AOTCompiledContext23initLoadSingletonLookupEjj
 libQt6Qml.so.6:_ZNK11QQmlPrivate18AOTCompiledContext23setReturnValueUndefinedEv
 libQt6Qml.so.6:_ZNK11QQmlPrivate18AOTCompiledContext24callObjectPropertyLookupEjP7QObjectPPvi
 libQt6Qml.so.6:_ZNK11QQmlPrivate18AOTCompiledContext28initCallObjectPropertyLookupEjP7QObjecti
 libQt6Qml.so.6:_ZNK11QQmlPrivate18AOTCompiledContext28initGetObjectLookupAsVariantEjP7QObject
 libQt6Qml.so.6:_ZNK11QQmlPrivate18AOTCompiledContext29loadScopeObjectPropertyLookupEjPv
+libQt6Qml.so.6:_ZNK11QQmlPrivate18AOTCompiledContext29setObjectImplicitDestructibleEP7QObject
 libQt6Qml.so.6:_ZNK11QQmlPrivate18AOTCompiledContext33initLoadScopeObjectPropertyLookupEj
+libQt6Qml.so.6:_ZNK11QQmlPrivate18AOTCompiledContext37initCallObjectPropertyLookupAsVariantEjP7QObject
 libQt6Qml.so.6:_ZNK11QQmlPrivate18AOTCompiledContext9setLocalsEPKNS_23AOTTrackedLocalsStorageE
 libQt6Qml.so.6:_ZNK13QQmlComponent11errorStringEv
 libQt6Qml.so.6:_ZNK13QQmlComponent6errorsEv
@@ -1384,6 +1403,7 @@ libQt6WaylandClient.so.6:_ZN23QWaylandClientExtension10initializeEv
 libQt6WaylandClient.so.6:_ZN23QWaylandClientExtension10setVersionEi
 libQt6WaylandClient.so.6:_ZN23QWaylandClientExtension11qt_metacallEN11QMetaObject4CallEiPPv
 libQt6WaylandClient.so.6:_ZN23QWaylandClientExtension11qt_metacastEPKc
+libQt6WaylandClient.so.6:_ZN23QWaylandClientExtension13activeChangedEv
 libQt6WaylandClient.so.6:_ZN23QWaylandClientExtension16staticMetaObjectE
 libQt6WaylandClient.so.6:_ZN23QWaylandClientExtensionC2Ei
 libQt6WaylandClient.so.6:_ZN23QWaylandClientExtensionD2Ev
@@ -1499,6 +1519,7 @@ libc.so.6:__stack_chk_fail
 libc.so.6:_exit
 libc.so.6:clock_gettime
 libc.so.6:close
+libc.so.6:dlsym
 libc.so.6:dup
 libc.so.6:exit
 libc.so.6:fcntl
@@ -1553,6 +1574,7 @@ libgbm.so.1:gbm_create_device
 libgbm.so.1:gbm_device_destroy
 libgbm.so.1:gbm_device_get_fd
 libgcc_s.so.1:_Unwind_Resume
+libgcc_s.so.1:__mulsc3
 libgio-2.0.so.0:g_cancellable_connect
 libgio-2.0.so.0:g_task_new
 libgio-2.0.so.0:g_task_propagate_boolean
@@ -1580,9 +1602,13 @@ libjemalloc.so.2:_Znam
 libjemalloc.so.2:_Znwm
 libjemalloc.so.2:_ZnwmSt11align_val_t
 libjemalloc.so.2:calloc
+libm.so.6:cabsf
 libm.so.6:cbrtf
+libm.so.6:cosf
 libm.so.6:modf
+libm.so.6:powf
 libm.so.6:round
+libm.so.6:sincosf
 libm.so.6:sqrt
 libpam.so.0:pam_authenticate
 libpam.so.0:pam_end
@@ -1708,6 +1734,7 @@ libstdc++.so.6:__cxa_guard_abort
 libstdc++.so.6:__cxa_guard_acquire
 libstdc++.so.6:__cxa_guard_release
 libstdc++.so.6:__cxa_rethrow
+libstdc++.so.6:__cxa_thread_atexit
 libstdc++.so.6:__cxa_throw
 libstdc++.so.6:__cxa_throw_bad_array_new_length
 libstdc++.so.6:__dynamic_cast
@@ -1716,8 +1743,6 @@ libwayland-client.so.0:wl_buffer_interface
 libwayland-client.so.0:wl_output_interface
 libwayland-client.so.0:wl_pointer_interface
 libwayland-client.so.0:wl_proxy_add_listener
-libwayland-client.so.0:wl_proxy_destroy
-libwayland-client.so.0:wl_proxy_get_listener
 libwayland-client.so.0:wl_proxy_get_user_data
 libwayland-client.so.0:wl_proxy_get_version
 libwayland-client.so.0:wl_proxy_marshal_constructor_versioned

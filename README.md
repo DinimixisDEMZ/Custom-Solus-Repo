@@ -1,8 +1,9 @@
 # 📦 Custom Solus Repository For Noctalia Support
+###### [Ver Traducción al español](https://github.com/DinimixisDEMZ/Noctalia-For-Solus/blob/master/README.es.md)
 ### Experimental & Personal Package Collection
 
 [![Solus](https://img.shields.io/badge/OS-Solus-blue?style=flat-square&logo=solus&logoColor=white)](https://getsol.us/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
 
 ## Purpose
 The main goal of this repository is to ensure the **availability of essential packages** required for experimental software and extra tools (e.g., `Noctalia` and `Noctalia-QS`) within the Solus ecosystem.
@@ -11,9 +12,9 @@ The main goal of this repository is to ensure the **availability of essential pa
 
 | 📦 Package Name | ⚖️ License | 🏷️ Version | 📥 Binary | 📅 Last Checked |
 | :--- | :---: | :---: | :---: | :---: |
-| [**brightnessctl**](https://github.com/Hummer12007/brightnessctl) | [![MIT](https://img.shields.io/badge/MIT-gray?style=flat-square)](https://opensource.org/licenses/MIT) | [![v0.5.1](https://img.shields.io/badge/0.5.1-blue?style=flat-square)](https://github.com/Hummer12007/brightnessctl/releases/tag/0.5.1) | [![EOPKG](https://img.shields.io/badge/Download-181717?style=flat-square&logo=solus&logoColor=white)](https://github.com/DinimixisDEMZ/Custom-Solus-Repo/blob/master/brightnessctl/brightnessctl-0.5.1-1-1-x86_64.eopkg) | ![Date](https://img.shields.io/badge/2026--01--28-lightgray?style=flat-square) |
-| [**noctalia-qs**](https://github.com/noctalia-dev/noctalia-qs) | [![GPL--3.0](https://img.shields.io/badge/GPL--3.0-gray?style=flat-square)](https://www.gnu.org/licenses/gpl-3.0) | [![v0.0.5](https://img.shields.io/badge/0.0.5-blue?style=flat-square)](https://github.com/noctalia-dev/noctalia-qs/releases/tag/v0.0.5) | [![GitHub](https://img.shields.io/badge/Download-181717?style=flat-square&logo=solus&logoColor=white)](https://github.com/DinimixisDEMZ/Custom-Solus-Repo/blob/master/noctalia-qs/noctalia-qs-0.0.5-1-1-x86_64.eopkg) | ![Date](https://img.shields.io/badge/2026--03--05-lightgray?style=flat-square) |
-| [**wlsunset**](https://github.com/kennylevinsen/wlsunset) | [![MIT](https://img.shields.io/badge/MIT-gray?style=flat-square)](https://opensource.org/licenses/MIT) | [![v0.4.0](https://img.shields.io/badge/0.4.0-blue?style=flat-square)](https://github.com/kennylevinsen/wlsunset/releases/tag/0.4.0) | [![GitHub](https://img.shields.io/badge/Download-181717?style=flat-square&logo=solus&logoColor=white)](https://github.com/DinimixisDEMZ/Custom-Solus-Repo/blob/master/wlsunset/wlsunset-0.4.0-1-1-x86_64.eopkg) | ![Date](https://img.shields.io/badge/2026--01--30-lightgray?style=flat-square) |
+| [**brightnessctl**](https://github.com/Hummer12007/brightnessctl) | [![MIT](https://img.shields.io/badge/MIT-gray?style=flat-square)](https://opensource.org/licenses/MIT) | [![v0.5.1](https://img.shields.io/badge/0.5.1-blue?style=flat-square)](https://github.com/Hummer12007/brightnessctl/releases/tag/0.5.1) | [![EOPKG](https://img.shields.io/badge/Download-181717?style=flat-square&logo=solus&logoColor=white)](https://github.com/DinimixisDEMZ/Custom-Solus-Repo/blob/master/brightnessctl/brightnessctl-0.5.1-1-1-x86_64.eopkg) | [![Date](https://img.shields.io/badge/2026--01--28-lightgray?style=flat-square)](https://www.youtube.com/watch?v=dQw4w9WgXcQ) |
+| [**noctalia-qs**](https://github.com/noctalia-dev/noctalia-qs) | [![LGPL--3.0](https://img.shields.io/badge/LGPL--3.0-gray?style=flat-square)](https://www.gnu.org/licenses/lgpl-3.0) | [![v0.0.8](https://img.shields.io/badge/0.0.8-blue?style=flat-square)](https://github.com/noctalia-dev/noctalia-qs/releases/tag/v0.0.8) | [![GitHub](https://img.shields.io/badge/Download-181717?style=flat-square&logo=solus&logoColor=white)](https://github.com/DinimixisDEMZ/Noctalia-For-Solus/blob/master/noctalia-qs/noctalia-qs-0.0.8-4-1-x86_64.eopkg) | [![Date](https://img.shields.io/badge/2026--03--12-lightgray?style=flat-square)](https://www.youtube.com/watch?v=dQw4w9WgXcQ) |
+| [**wlsunset**](https://github.com/kennylevinsen/wlsunset) | [![MIT](https://img.shields.io/badge/MIT-gray?style=flat-square)](https://opensource.org/licenses/MIT) | [![v0.4.0](https://img.shields.io/badge/0.4.0-blue?style=flat-square)](https://github.com/kennylevinsen/wlsunset/releases/tag/0.4.0) | [![GitHub](https://img.shields.io/badge/Download-181717?style=flat-square&logo=solus&logoColor=white)](https://github.com/DinimixisDEMZ/Custom-Solus-Repo/blob/master/wlsunset/wlsunset-0.4.0-1-1-x86_64.eopkg) | [![Date](https://img.shields.io/badge/2026--01--30-lightgray?style=flat-square)](https://www.youtube.com/watch?v=dQw4w9WgXcQ) |
 
 ## Installation
 To install any of these packages manually, download the `.eopkg` file and run:
@@ -24,6 +25,6 @@ sudo eopkg it ./package-name.eopkg
 
 ## Building | Generate EOPKG Manually
 - **Clone** a repo: `git clone https://github.com/DinimixisDEMZ/Noctalia-For-Solus`
-- **Go to** "package folder" example: `cd noctalia-qs`
-- **Build** with **solbuild**: `sudo solbuild package.yml`
-- After **install** a generate .eopkg, example: `sudo eopkg it ./noctalia-qs-0.0.5-1-1-x86_64.eopkg`
+- **Go to** "package folder", ex: `cd noctalia-qs`
+- **Build** with **solbuild**: `sudo solbuild build package.yml`
+- **After** it builds, it will generate a **eopkg** that you can install using: `sudo eopkg it ./noctalia-qs-0.0.8-4-1-x86_64.eopkg`
