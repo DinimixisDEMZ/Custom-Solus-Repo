@@ -16,7 +16,7 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v6
 
-    - name: setup-solbuild
+    - name: Setup Solbuild
       uses: GZGavinZhao/setup-solbuild@v1.1
       with:
         packager: "DinimixisDEMZ"
@@ -39,12 +39,10 @@ jobs:
       run: |
         bash ./release.sh
 
-    - name: Uploading files to GitHub Release.
+    - name: Uploading files to GitHub Release
       uses: softprops/action-gh-release@v2.6.1
-      env:
-          GIT_TOKEN: ${{ secrets.GIT_TOKEN }}
       with:
-        tag_name: "build-${{ github.run_id }}"
+        tag_name: "${{ github.event.inputs.PACKAGE }}-${{ github.run_id }}"
         name: "${{ github.event.inputs.PACKAGE }} Build: ${{ github.run_id }}"
         body: |
             ***Build Information***
