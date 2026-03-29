@@ -25,8 +25,11 @@ else
     exit 0
 fi
 
-SIZE=$(du -h "$DEST/$PACKAGE_FILE" | cut -f1) >> $GITHUB_ENV
-MD5=$(md5sum "$DEST/$PACKAGE_FILE" | cut -d' ' -f1) >> $GITHUB_ENV
+SIZE=$(du -h "$DEST/$PACKAGE_FILE" | cut -f1)
+MD5=$(md5sum "$DEST/$PACKAGE_FILE" | cut -d' ' -f1)
+
+echo "SIZE=$SIZE" >> "$GITHUB_ENV"
+echo "MD5=$MD5" >> "$GITHUB_ENV"
 
 echo "Info: Size $SIZE, MD5 $MD5"
 echo "File detected: $PACKAGE_FILE"

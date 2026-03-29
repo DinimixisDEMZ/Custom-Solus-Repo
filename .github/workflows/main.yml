@@ -49,8 +49,8 @@ jobs:
         body: |
             ***Build Information***
             - ➡️ Package: ${{ github.event.inputs.PACKAGE }}
-            - ➡️ Size: ${{ env.SIZE }}
-            - ➡️ MD5: ${{ env.MD5 }}
+            - Size: ${{ env.SIZE }}
+            - MD5: ${{ env.MD5 }}
         files: |
           Releases/*
 
