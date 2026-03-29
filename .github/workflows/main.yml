@@ -29,14 +29,14 @@ jobs:
     - name: Install required packages
       run: |
         sudo apt install -y \
-          python3 python3-pip git golang
+          python3 python3-pip git golang bzr
 
         chmod +x ./release.sh
 
     - name: Build package
       shell: bash
       run: |
-        cd "$(pwd)/Noctalia-For-Solus/$PACKAGE"
+        cd "$(pwd)/$PACKAGE"
         sudo solbuild build package.yml
 
     - name: Create release
