@@ -1,10 +1,16 @@
-            - name: setup-solbuild
-  # You may pin to the exact commit or the version.
-  # uses: GZGavinZhao/setup-solbuild@4f8d2f046b979eca7e13fd68fba8dd1ea94fb008
-  uses: GZGavinZhao/setup-solbuild@v1.1
-  with:
-    # Name of the packager.
-    packager: # optional, default is user
-    # Email of the packager.
-    email: # optional, default is user@example.com
+name: Update noctalia
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v6
+
+    - name: setup-solbuild
+      uses: GZGavinZhao/setup-solbuild@v1.1
           
