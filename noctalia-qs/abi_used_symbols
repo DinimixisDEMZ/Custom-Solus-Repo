@@ -1166,7 +1166,6 @@ libQt6Qml.so.6:_ZN9QJSEngine6createE9QMetaTypePKv
 libQt6Qml.so.6:_ZN9QJSEngine8evaluateERK7QStringS2_iP5QListIS0_E
 libQt6Qml.so.6:_ZN9QJSEngine9convertV2ERK8QJSValue9QMetaTypePv
 libQt6Qml.so.6:_ZN9QJSEngineC1Ev
-libQt6Qml.so.6:_ZN9QJSEngineD1Ev
 libQt6Qml.so.6:_ZN9QQmlErrorC1ERKS_
 libQt6Qml.so.6:_ZN9QQmlErrorD1Ev
 libQt6Qml.so.6:_ZNK10QQmlEngine11rootContextEv
@@ -1610,7 +1609,6 @@ libjemalloc.so.2:_Znam
 libjemalloc.so.2:_Znwm
 libjemalloc.so.2:_ZnwmSt11align_val_t
 libjemalloc.so.2:calloc
-libm.so.6:cabsf
 libm.so.6:cbrtf
 libm.so.6:cosf
 libm.so.6:modf
@@ -1619,6 +1617,7 @@ libm.so.6:powf
 libm.so.6:round
 libm.so.6:sincosf
 libm.so.6:sqrt
+libm.so.6:sqrtf
 libpam.so.0:pam_authenticate
 libpam.so.0:pam_end
 libpam.so.0:pam_start_confdir
